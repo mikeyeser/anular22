@@ -1,0 +1,15 @@
+<div class="idk">
+
+
+<!-- <div *ngFor="let product of menu">
+    <img [src]="product.image" alt="">
+    <h1>{{product.name}}</h1>
+    <p></p>
+    
+</div> -->
+
+<app-menu-card *ngFor="let product of menu" [singleProduct]="product"></app-menu-card>
+
+
+</div>
+
