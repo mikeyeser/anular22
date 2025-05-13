@@ -5,11 +5,21 @@
 
 
 
-<div >
-    <img [src]="singleProduct?.image" alt="">
+<!-- <div >
+    <img  alt="">
     <h1>{{singleProduct?.name}}</h1>
     <p>price: {{singleProduct?.price}}</p>
      <p>spice level: {{singleProduct?.spiciness}}</p>
        <p>vegeterian: {{singleProduct?.vegeterian}}</p>
     
+</div> -->
+
+<div class="card" style="width: 18rem;">
+  <img [src]="singleProduct?.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{singleProduct?.name}}</h5>
+    <p class="card-text">price: {{singleProduct?.price}}</p>
+    <p class="card-text" >vegeterian: {{singleProduct?.vegeterian}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>

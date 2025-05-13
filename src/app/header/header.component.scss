@@ -1,0 +1,30 @@
+
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 30px;
+    list-style-type: none; 
+}
+
+li{
+    text-decoration: none;
+}
+a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.whoule{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: end;
+    background-color: rgb(27, 27, 104);
+}
