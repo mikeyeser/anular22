@@ -9,3 +9,19 @@ export class Menu {
     spiciness?: number
     categoryId?: number
 }
+export class Basket{
+    quantity!: number
+    price!: number
+    product?: Menu
+}
+
+
+export class Addingtocart{
+
+  id!: number
+  quantity!: number
+  price!: number
+  productId!: number
+  product!: Menu
+  
+}

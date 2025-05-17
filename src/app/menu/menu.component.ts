@@ -21,7 +21,7 @@ menu : Menu[] = []
 
 ngOnInit(){
      this.api.getAll().subscribe((resp:any)=> {
-      console.log(resp)
+      // console.log(resp)
       this.menu = resp
      })
   }

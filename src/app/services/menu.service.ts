@@ -12,5 +12,15 @@ export class MenuService {
     return this.http.get("https://restaurant.stepprojects.ge/api/Products/GetAll")
   }
 
+  getallBasket(){
+    return this.http.get("https://restaurant.stepprojects.ge/api/Baskets/GetAll")
+  }
 
+  addtoBasket(postObject: any){
+    return this.http.post("https://restaurant.stepprojects.ge/api/Baskets/AddToBasket", postObject )
+  }
+
+  deleteFromCart(id? :number){
+    return this.http.delete(`https://restaurant.stepprojects.ge/api/Baskets/DeleteProduct/${id}`)
+  }
 }

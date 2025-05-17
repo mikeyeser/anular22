@@ -20,6 +20,7 @@
     <h5 class="card-title">{{singleProduct?.name}}</h5>
     <p class="card-text">price: {{singleProduct?.price}}</p>
     <p class="card-text" >vegeterian: {{singleProduct?.vegeterian}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a (click)="addingthecart()" class="btn btn-primary">add to cart</a>
+    <input placeholder="amount" type="text" [(ngModel)]="amount">
   </div>
 </div>
