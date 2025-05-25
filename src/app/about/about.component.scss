@@ -1,0 +1,14 @@
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/02/97/67/70/1000_F_297677001_zX7ZzRq8DObUV5IWTHAIhAae6DuiEQh4.jpg");
+    background-size: cover;
+    p{
+        width: 600px;
+        font-size: large;
+        color: white;
+    }
+}

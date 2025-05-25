@@ -1,3 +1,48 @@
+
+<header class="crot">
+
+<div class="pepeo">
+    
+    <div class="pepeosbaby"><span>vegeterian</span><input  [(ngModel)]="vegeterian"  type="checkbox" name="" id=""></div>
+    <div class="pepeosbaby" ><span>nuts</span><input [(ngModel)]="nuts"  type="checkbox" name="" id=""></div>
+    <div class="pop" ><span>spiciness</span><select  [(ngModel)]="spiciness"  name="" id="">
+        <option value="">0</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+    </select></div>
+    <div class="pop" ><span>categoryId</span><select  [(ngModel)]="categoryId"  name="" id="">
+        <option value="">0</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+        <option value="">7</option>
+        <option value="">8</option>
+        
+    </select>
+    </div>
+
+    <!-- <input placeholder="vegeterian = true/false" [(ngModel)]="vegeterian" type="text">
+    <input placeholder="nuts = true/false" [(ngModel)]="nuts" type="text">
+    <input placeholder="spiciness = 0-4" [(ngModel)]="spiciness" type="text">
+    <input placeholder="categoryId = 1-8" [(ngModel)]="categoryId" type="text"> -->
+
+    <button class="btnn" (click)="filterwithdavid()"><i class="fa-solid fa-magnifying-glass"></i>search</button>
+
+
+    <button class="btnn" (click)="clear()"><i class="fa-solid fa-broom"></i>clear</button>
+
+    
+</div>
+
+</header>
+
+
+
 <div class="idk">
 
 

@@ -25,3 +25,15 @@ export class Addingtocart{
   product!: Menu
   
 }
+
+
+export class changingtheamount{
+
+  id!: number
+  quantity!: number
+  price!: number
+  productId!: number
+  product!: Menu
+  
+}
+

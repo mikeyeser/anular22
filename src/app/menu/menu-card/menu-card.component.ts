@@ -19,11 +19,13 @@ export class MenuCardComponent {
 
    @Input() singleProduct? : Menu
 
+
+
+
+
    amount! : number
 
-   ngOnInit(){
-    
-  }
+ 
 
 
 
@@ -36,10 +38,19 @@ export class MenuCardComponent {
       console.log(resp)
       this.addingtoCart = resp
      })
+     
     }
+
+    noAmount = false    
+
+
+ askForAmount(): void {
+    alert('Please enter a valid amount!');
+  }
 
 
 }
+
 
 
 

@@ -23,4 +23,12 @@ export class MenuService {
   deleteFromCart(id? :number){
     return this.http.delete(`https://restaurant.stepprojects.ge/api/Baskets/DeleteProduct/${id}`)
   }
-}
+
+  changetheAmount(uptobject: any){
+    return this.http.put(`https://restaurant.stepprojects.ge/api/Baskets/UpdateBasket`, uptobject)
+  }
+
+  filterProducts( vegeterian : boolean, nuts: boolean, spiciness: string,categoryId: string){
+    return this.http.get(`https://restaurant.stepprojects.ge/api/Products/GetFiltered?vegeterian=${vegeterian}&nuts=${nuts}&spiciness=${spiciness}&categoryId=${categoryId}`)
+  }
+}                      

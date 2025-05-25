@@ -1,5 +1,12 @@
 .div{
-    background-color: rgb(27, 27, 104);
+    background-color: rgb(76, 76, 76);
     height:  100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contacts{
+        display: flex;
+        flex-direction: column;
+    }
 }

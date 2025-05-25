@@ -1,10 +1,15 @@
-<div class="card" style="width: 18rem;" *ngFor="let el of basket">
-  <img [src]="el.product?.image" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{el.product?.name}}</h5>
-    <p class="card-text">price: {{el.product?.price}}</p>
-    <p class="card-text" >vegeterian: {{el.product?.vegeterian}}</p>
-     <p class="card-text" >amount: {{el.product?.id}}</p>
-    <a (click)="delete(el.product?.id)"  class="btn btn-primary">Go somewhere</a>
+
+<div class="bro">
+  <div class="card" style="width: 18rem;" *ngFor="let el of basket let index= index">
+    <img [src]="el.product?.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{el.product?.name}}</h5>
+      <p class="card-text">price: {{el.product?.price}}</p>
+      <p class="card-text" >vegeterian: {{el.product?.vegeterian}}</p>
+      <p class="card-text" >amount: {{el.quantity}}</p>
+      <a (click)="delete(el.product?.id)"  class="btn btn-primary">Delete</a>
+      <input placeholder="change amount" [(ngModel)]="amount" type="number">
+      <a (click)="changetheAmount1(el.product?.id, el.product?.price)" class="btn btn-primary">Submit</a>
+    </div>
   </div>
 </div>
